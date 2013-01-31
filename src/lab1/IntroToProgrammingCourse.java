@@ -9,16 +9,15 @@ import javax.swing.JOptionPane;
  * @author      your name goes here
  * @version     1.00
  */
-public class IntroToProgrammingCourse {
-    private String courseName;
-    private String courseNumber;
-    private double credits;
+public class IntroToProgrammingCourse extends CollegeCourse{
+    
 
     public IntroToProgrammingCourse(String courseName, String courseNumber) {
         this.setCourseName(courseName);
         this.setCourseNumber(courseNumber);
     }
 
+    @Override
     public String getCourseNumber() {
         return courseNumber;
     }
