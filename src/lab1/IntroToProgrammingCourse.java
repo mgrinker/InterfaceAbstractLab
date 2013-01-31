@@ -11,9 +11,16 @@ import javax.swing.JOptionPane;
  */
 public class IntroToProgrammingCourse extends CollegeCourse{
 
-    public IntroToProgrammingCourse(String courseName, String courseNumber, double credits, String prerequisites, String instructor, String roomNumber, String daysOfWeek, String classTime) {
-        super(courseName, courseNumber, credits, prerequisites, instructor, roomNumber, daysOfWeek, classTime);
+    public IntroToProgrammingCourse(String courseName, String courseNumber, 
+            double credits, String prerequisites, String instructor, 
+            String roomNumber, String daysOfWeek, String classTime) {
+        super(courseName, courseNumber, credits, prerequisites, instructor,
+                roomNumber, daysOfWeek, classTime);
     }
+
+    
+    
+    
     
     public final void setCourseNumber(String courseNumber) {
         if(courseNumber == null || courseNumber.length() == 0) {
