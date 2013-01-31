@@ -41,23 +41,43 @@ public class IntroToProgrammingCourse extends CollegeCourse{
     }
     
     public void setPrerequisites(String prerequisites) {
-        
+        if(prerequisites == null || prerequisites.length() == 0) {
+            JOptionPane.showMessageDialog(null,
+                    "Error: prerequisites cannot be null of empty string");
+            System.exit(0);
+        }
     }
     
     public void setInstructor(String instructor) {
-        
+        if(instructor == null || instructor.length() == 0) {
+            JOptionPane.showMessageDialog(null,
+                    "Error: instructor cannot be null of empty string");
+            System.exit(0);
+        }
     }
     
     public void setRoomNumber(String roomNumber) {
-        
+        if(roomNumber == null || roomNumber.length() == 0) {
+            JOptionPane.showMessageDialog(null,
+                    "Error: roomNumber cannot be null of empty string");
+            System.exit(0);
+        }
     }
     
     public void setDaysOfWeek(String daysOfWeek) {
-        
+        if(daysOfWeek == null || daysOfWeek.length() == 0) {
+            JOptionPane.showMessageDialog(null,
+                    "Error: daysOfWeek cannot be null of empty string");
+            System.exit(0);
+        }
     }
     
     public void setClassTime(String classTime) {
-        
+        if(classTime == null || classTime.length() == 0) {
+            JOptionPane.showMessageDialog(null,
+                    "Error: classTime cannot be null of empty string");
+            System.exit(0);
+        }
     }
     
     
