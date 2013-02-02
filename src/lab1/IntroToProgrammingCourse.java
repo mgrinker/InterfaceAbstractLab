@@ -24,6 +24,9 @@ public class IntroToProgrammingCourse extends CollegeCourse{
     private String classTime;
     private int numberOfSeats;
 
+    public IntroToProgrammingCourse() {
+    }
+    
     public IntroToProgrammingCourse(String sectionNumber, String instructor,
             String roomNumber, String dates, String daysOfWeek,
             String classTime, int numberOfSeats) {

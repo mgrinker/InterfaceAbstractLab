@@ -10,19 +10,19 @@ public class ProgramStart {
     
      public static void main(String[] args) {
         
-         String cName,
-                 cNumber,
-                 cPrerequisires,
-                 cInstructor,
-                 cRoomNumber,
-                 daysOfWeek,
-                 cClassTime;
-         double cCredits;
+         String classSection,
+                 classInstructor,
+                 classRoomNumber,
+                 classDates,
+                 classDays,
+                 calssTime;
+         int classNumberOFSeats;
                  
         // Create Scanner object for inputs
         Scanner keyboard = new Scanner(System.in);
         
         // Create IntroToProgrammingCourse object
+        CollegeCourse introProgSection1 = new IntroToProgrammingCourse(); 
         
          System.out.println("You are going to enter the information for an"
                  + " Introductory to Programming course");
