@@ -46,6 +46,9 @@ public class IntroToProgrammingCourse extends CollegeCourse{
 //            System.exit(0);
 //        }
 //    }
+    
+
+    
 
     
     
@@ -80,6 +83,7 @@ public class IntroToProgrammingCourse extends CollegeCourse{
 //            System.exit(0);
 //        }
 //    }
+    
 
     public String getSectionNumber() {
         return sectionNumber;
@@ -135,6 +139,26 @@ public class IntroToProgrammingCourse extends CollegeCourse{
 
     public void setNumberOfSeats(int numberOfSeats) {
         this.numberOfSeats = numberOfSeats;
+    }
+
+    public String getCOURSE_NAME() {
+        return COURSE_NAME;
+    }
+
+    public String getCOURSE_NUMBER() {
+        return COURSE_NUMBER;
+    }
+
+    public double getCREDITS() {
+        return CREDITS;
+    }
+
+    public String getPREREQUISITES() {
+        return PREREQUISITES;
+    }
+
+    public double getTUITION() {
+        return TUITION;
     }
     
     

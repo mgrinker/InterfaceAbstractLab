@@ -22,7 +22,8 @@ public class ProgramStart {
         Scanner keyboard = new Scanner(System.in);
         
         // Create IntroToProgrammingCourse object
-        CollegeCourse introProgSection1 = new IntroToProgrammingCourse(); 
+        IntroToProgrammingCourse introProgSection1 = 
+                new IntroToProgrammingCourse(); 
         
         //Get section number, validate and set
          System.out.println("You are going to enter the information for an"
@@ -96,6 +97,39 @@ public class ProgramStart {
          }
          introProgSection1.setNumberOfSeats(classNumberOfSeats);
          
+         //Display IntroToProgramming object
+         System.out.println("Here is the course information");
+         System.out.println("College name:\t"
+                 + introProgSection1.getCOLLEGE_NAME());
+         System.out.println("\t\tCollege address: " 
+                 + introProgSection1.getCOLLEGE_ADDRESS()
+                 + "\n\t\t" + introProgSection1.getCOLLEGE_CITY() + ", " 
+                        + introProgSection1.getCOLLEGE_STATE() + "  "
+                        + introProgSection1.getCOLLEGE_ZIP());
+         System.out.println("Course name:\t"
+                 + introProgSection1.getCOURSE_NAME());
+         System.out.println("Course number:\t"
+                 + introProgSection1.getCOURSE_NUMBER());
+         System.out.println("Credits:\t"
+                 + introProgSection1.getCREDITS());
+         System.out.println("Prerequisite:\t"
+                 + introProgSection1.getPREREQUISITES());
+         System.out.println("Tuition:\t$"
+                 + introProgSection1.getTUITION());
+         System.out.println("Section number:\t"
+                 + introProgSection1.getSectionNumber());
+         System.out.println("Instructor:\t"
+                 + introProgSection1.getInstructor());
+         System.out.println("Room number:\t"
+                 + introProgSection1.getRoomNumber());
+         System.out.println("Section dates:\t"
+                 + introProgSection1.getDates());
+         System.out.println("Section days:\t"
+                 + introProgSection1.getDaysOfWeek());
+         System.out.println("Section time:\t"
+                 + introProgSection1.getClassTime());
+         System.out.println("Number of seats in section:\t"
+                 + introProgSection1.getNumberOfSeats());
          
          
         
