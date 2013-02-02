@@ -6,45 +6,109 @@ package lab1;
  * @author      Michael Grinker
  * @version     1.00
  */
-public class IntroJavaCourse {
-    String courseName;
-    private String courseNumber;
-    private double credits;
-    private String prerequisites;
-
-    public IntroJavaCourse(String courseName, String courseNumber) {
-        this.courseName = courseName;
-        this.courseNumber = courseNumber;
+public class IntroJavaCourse extends CollegeCourse {
+    
+    private final String COURSE_NAME = "Into to Java";
+    private final String COURSE_NUMBER = "152-134";
+    private final double CREDITS = 4;
+    private final String PREREQUISITES = "Intro to Programming";
+    private final double TUITION = 508.60;
+    private String sectionNumber;
+    private String instructor;
+    private String roomNumber;
+    private String dates;
+    private String daysOfWeek;
+    private String classTime;
+    private int numberOfSeats;
+    
+    public IntroJavaCourse() {
     }
 
-    public String getCourseNumber() {
-        return courseNumber;
+    public IntroJavaCourse(String sectionNumber, String instructor, String roomNumber, String dates, String daysOfWeek, String classTime, int numberOfSeats) {
+        this.sectionNumber = sectionNumber;
+        this.instructor = instructor;
+        this.roomNumber = roomNumber;
+        this.dates = dates;
+        this.daysOfWeek = daysOfWeek;
+        this.classTime = classTime;
+        this.numberOfSeats = numberOfSeats;
     }
 
-    public void setCourseNumber(String courseNumber) {
-        this.courseNumber = courseNumber;
+    
+    
+    public String getSectionNumber() {
+        return sectionNumber;
     }
 
-    public double getCredits() {
-        return credits;
+    public void setSectionNumber(String sectionNumber) {
+        this.sectionNumber = sectionNumber;
     }
 
-
-    public String getPrerequisites() {
-        return prerequisites;
+    public String getInstructor() {
+        return instructor;
     }
 
-    public void setPrerequisites(String prerequisites) {
-        this.prerequisites = prerequisites;
+    public void setInstructor(String instructor) {
+        this.instructor = instructor;
     }
 
-        public void setCredits(double credits) {
-        if(credits < 0 || credits > 5.0) {
-            System.out.println(
-                    "Error: credits must be in the range 0.5 to 4.0");
-            System.exit(0);
-        }
-        this.setCredits(credits);
+    public String getRoomNumber() {
+        return roomNumber;
     }
 
+    public void setRoomNumber(String roomNumber) {
+        this.roomNumber = roomNumber;
+    }
+
+    public String getDates() {
+        return dates;
+    }
+
+    public void setDates(String dates) {
+        this.dates = dates;
+    }
+
+    public String getDaysOfWeek() {
+        return daysOfWeek;
+    }
+
+    public void setDaysOfWeek(String daysOfWeek) {
+        this.daysOfWeek = daysOfWeek;
+    }
+
+    public String getClassTime() {
+        return classTime;
+    }
+
+    public void setClassTime(String classTime) {
+        this.classTime = classTime;
+    }
+
+    public int getNumberOfSeats() {
+        return numberOfSeats;
+    }
+
+    public void setNumberOfSeats(int numberOfSeats) {
+        this.numberOfSeats = numberOfSeats;
+    }
+
+    public String getCOURSE_NAME() {
+        return COURSE_NAME;
+    }
+
+    public String getCOURSE_NUMBER() {
+        return COURSE_NUMBER;
+    }
+
+    public double getCREDITS() {
+        return CREDITS;
+    }
+
+    public String getPREREQUISITES() {
+        return PREREQUISITES;
+    }
+
+    public double getTUITION() {
+        return TUITION;
+    }
 }
