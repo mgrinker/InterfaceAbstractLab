@@ -36,7 +36,25 @@ public abstract class CollegeCourse {
     public String getCOLLEGE_ZIP() {
         return COLLEGE_ZIP;
     }
+    //Abstract setter methods for sub classes
+    //This is to make sure variables are set in the subclassess for the courses
+    public abstract void setSectionNumber();
+    public abstract void setInstructor();
+    public abstract void setRoomNumber();
+    public abstract void setDates();
+    public abstract void setDaysOfWeek();
+    public abstract void setClassTime();
+    public abstract void setNnumberOfSeats();
     
+    //Abstract getter methods
+    //This is make sure methods are set in the subclasses to get the information
+    public abstract String getSectionNumber();
+    public abstract String getInstructor();
+    public abstract String getRoomNumber();
+    public abstract String getDates();
+    public abstract String getDaysOfWeek();
+    public abstract String getClassTime();
+    public abstract int getNnumberOfSeats();
     
     
 
