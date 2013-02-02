@@ -159,7 +159,7 @@ public class ProgramStart {
              System.out.println("What is the instructor name: ");
              classInstructor = keyboard.nextLine();
          }
-         introProgSection1.setInstructor(classInstructor);
+         introJavaCourseSection1.setInstructor(classInstructor);
          
           //Get section number, validate and set
          System.out.println("What is the room number: ");
@@ -246,7 +246,115 @@ public class ProgramStart {
                  + introJavaCourseSection1.getNumberOfSeats());
          
         
+        // Create IntroToProgrammingCourse object
+        AdvancedJavaCourse advancedJavaCourseSection1 = 
+                new AdvancedJavaCourse(); 
         
+        //Get section number, validate and set
+         System.out.println("You are going to enter the information for an"
+                 + " Advanced Java course");
+         System.out.println("What is the section number: ");
+         classSection = keyboard.nextLine();
+         while(classSection == null || classSection.length() == 0){
+             System.out.println("You need to enter a section number");
+             System.out.println("What is the section number: ");
+             classSection = keyboard.nextLine();
+         }
+         advancedJavaCourseSection1.setSectionNumber(classSection);
+         
+          //Get instructor, validate and set
+         System.out.println("What is the instructor name: ");
+         classInstructor = keyboard.nextLine();
+         while(classInstructor == null || classInstructor.length() == 0){
+             System.out.println("You need to enter a section number");
+             System.out.println("What is the instructor name: ");
+             classInstructor = keyboard.nextLine();
+         }
+         advancedJavaCourseSection1.setInstructor(classInstructor);
+         
+          //Get section number, validate and set
+         System.out.println("What is the room number: ");
+         classRoomNumber = keyboard.nextLine();
+         while(classRoomNumber == null || classRoomNumber.length() == 0){
+             System.out.println("You need to enter a room number");
+             System.out.println("What is the room number: ");
+             classRoomNumber = keyboard.nextLine();
+         }
+         advancedJavaCourseSection1.setRoomNumber(classRoomNumber);
+         
+          //Get class dates, validate and set
+         System.out.println("What are the dates for the class: ");
+         classDates = keyboard.nextLine();
+         while(classDates == null || classDates.length() == 0){
+             System.out.println("You need to enter the dates for the class");
+             System.out.println("What are the dates for the class: ");
+             classDates = keyboard.nextLine();
+         }
+         advancedJavaCourseSection1.setDates(classDates);
+         
+          //Get class days, validate and set
+         System.out.println("What days does the class meet: ");
+         classDays = keyboard.nextLine();
+         while(classDays == null || classDays.length() == 0){
+             System.out.println("You need to enter the class days");
+             System.out.println("What days does the class meet: ");
+             classDays = keyboard.nextLine();
+         }
+         advancedJavaCourseSection1.setDaysOfWeek(classDays);
+         
+          //Get class time, validate and set
+         System.out.println("What time does the class meet: ");
+         classTime = keyboard.nextLine();
+         while(classTime == null || classTime.length() == 0){
+             System.out.println("You need to enter a class time");
+             System.out.println("What time does the class meet: ");
+             classTime = keyboard.nextLine();
+         }
+         advancedJavaCourseSection1.setClassTime(classTime);
+         
+          //Get number of seats, validate and set
+         System.out.println("How many seats are in this section: ");
+         classNumberOfSeats = keyboard.nextInt();
+         while(classNumberOfSeats <= 0) {
+             System.out.println("You need to enter a positive number");
+             System.out.println("How many seats are in this section: ");
+             classNumberOfSeats = keyboard.nextInt();
+         }
+         advancedJavaCourseSection1.setNumberOfSeats(classNumberOfSeats);
+         
+         //Display IntroToProgramming object
+         System.out.println("Here is the course information");
+         System.out.println("College name:\t"
+                 + advancedJavaCourseSection1.getCOLLEGE_NAME());
+         System.out.println("\t\tCollege address: " 
+                 + advancedJavaCourseSection1.getCOLLEGE_ADDRESS()
+                 + "\n\t\t" + advancedJavaCourseSection1.getCOLLEGE_CITY() + ", " 
+                        + advancedJavaCourseSection1.getCOLLEGE_STATE() + "  "
+                        + advancedJavaCourseSection1.getCOLLEGE_ZIP());
+         System.out.println("Course name:\t"
+                 + advancedJavaCourseSection1.getCOURSE_NAME());
+         System.out.println("Course number:\t"
+                 + advancedJavaCourseSection1.getCOURSE_NUMBER());
+         System.out.println("Credits:\t"
+                 + advancedJavaCourseSection1.getCREDITS());
+         System.out.println("Prerequisite:\t"
+                 + advancedJavaCourseSection1.getPREREQUISITES());
+         System.out.println("Tuition:\t$"
+                 + advancedJavaCourseSection1.getTUITION());
+         System.out.println("Section number:\t"
+                 + advancedJavaCourseSection1.getSectionNumber());
+         System.out.println("Instructor:\t"
+                 + advancedJavaCourseSection1.getInstructor());
+         System.out.println("Room number:\t"
+                 + advancedJavaCourseSection1.getRoomNumber());
+         System.out.println("Section dates:\t"
+                 + advancedJavaCourseSection1.getDates());
+         System.out.println("Section days:\t"
+                 + advancedJavaCourseSection1.getDaysOfWeek());
+         System.out.println("Section time:\t"
+                 + advancedJavaCourseSection1.getClassTime());
+         System.out.println("Number of seats in section:\t"
+                 + advancedJavaCourseSection1.getNumberOfSeats());
         
     }
     
