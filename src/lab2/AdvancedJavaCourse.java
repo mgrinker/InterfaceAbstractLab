@@ -6,7 +6,9 @@ package lab2;
  * @author      Michael Grinker
  * @version     1.00
  */
-public class AdvancedJavaCourse extends lab1.CollegeCourse {
+public class AdvancedJavaCourse extends CollegeCourse
+    implements CourseSection {
+    
     private final String COURSE_NAME = "Advanced Java";
     private final String COURSE_NUMBER = "152-134";
     private final double CREDITS = 4;

@@ -6,7 +6,8 @@ package lab2;
  * @author      Michael Grinker
  * @version     1.00
  */
-public class IntroToProgrammingCourse extends CollegeCourse {
+public class IntroToProgrammingCourse extends CollegeCourse
+    implements CourseSection{
 
     private final String COURSE_NAME = "Into to Programming";
     private final String COURSE_NUMBER = "152-107";
