@@ -36,75 +36,102 @@ public class IntroToProgrammingCourse extends CollegeCourse{
         this.numberOfSeats = numberOfSeats;
     }
 
-    
-
-    
-    
-    
-    
     public final void setCourseNumber(String courseNumber) {
         if(courseNumber == null || courseNumber.length() == 0) {
             JOptionPane.showMessageDialog(null,
                     "Error: courseNumber cannot be null of empty string");
             System.exit(0);
         }
-        
     }
 
-    public void setCredits(double credits) {
-        if(credits < 0.5 || credits > 4.0) {
-            JOptionPane.showMessageDialog(null,
-                    "Error: credits must be in the range 0.5 to 4.0");
-            System.exit(0);
-        }
+    
+    
+//    public void setInstructor(String instructor) {
+//        if(instructor == null || instructor.length() == 0) {
+//            JOptionPane.showMessageDialog(null,
+//                    "Error: instructor cannot be null of empty string");
+//            System.exit(0);
+//        }
+//    }
+//    
+//    public void setRoomNumber(String roomNumber) {
+//        if(roomNumber == null || roomNumber.length() == 0) {
+//            JOptionPane.showMessageDialog(null,
+//                    "Error: roomNumber cannot be null of empty string");
+//            System.exit(0);
+//        }
+//    }
+//    
+//    public void setDaysOfWeek(String daysOfWeek) {
+//        if(daysOfWeek == null || daysOfWeek.length() == 0) {
+//            JOptionPane.showMessageDialog(null,
+//                    "Error: daysOfWeek cannot be null of empty string");
+//            System.exit(0);
+//        }
+//    }
+//    
+//    public void setClassTime(String classTime) {
+//        if(classTime == null || classTime.length() == 0) {
+//            JOptionPane.showMessageDialog(null,
+//                    "Error: classTime cannot be null of empty string");
+//            System.exit(0);
+//        }
+//    }
+
+    public String getSectionNumber() {
+        return sectionNumber;
     }
 
-    public final void setCourseName(String courseName) {
-        if(courseName == null || courseName.length() == 0) {
-            JOptionPane.showMessageDialog(null,
-                    "Error: courseName cannot be null of empty string");
-            System.exit(0);
-        }
+    public void setSectionNumber(String sectionNumber) {
+        this.sectionNumber = sectionNumber;
     }
-    
-    public void setPrerequisites(String prerequisites) {
-        if(prerequisites == null || prerequisites.length() == 0) {
-            JOptionPane.showMessageDialog(null,
-                    "Error: prerequisites cannot be null of empty string");
-            System.exit(0);
-        }
+
+    public String getInstructor() {
+        return instructor;
     }
-    
+
     public void setInstructor(String instructor) {
-        if(instructor == null || instructor.length() == 0) {
-            JOptionPane.showMessageDialog(null,
-                    "Error: instructor cannot be null of empty string");
-            System.exit(0);
-        }
+        this.instructor = instructor;
     }
-    
+
+    public String getRoomNumber() {
+        return roomNumber;
+    }
+
     public void setRoomNumber(String roomNumber) {
-        if(roomNumber == null || roomNumber.length() == 0) {
-            JOptionPane.showMessageDialog(null,
-                    "Error: roomNumber cannot be null of empty string");
-            System.exit(0);
-        }
+        this.roomNumber = roomNumber;
     }
-    
+
+    public String getDates() {
+        return dates;
+    }
+
+    public void setDates(String dates) {
+        this.dates = dates;
+    }
+
+    public String getDaysOfWeek() {
+        return daysOfWeek;
+    }
+
     public void setDaysOfWeek(String daysOfWeek) {
-        if(daysOfWeek == null || daysOfWeek.length() == 0) {
-            JOptionPane.showMessageDialog(null,
-                    "Error: daysOfWeek cannot be null of empty string");
-            System.exit(0);
-        }
+        this.daysOfWeek = daysOfWeek;
     }
-    
+
+    public String getClassTime() {
+        return classTime;
+    }
+
     public void setClassTime(String classTime) {
-        if(classTime == null || classTime.length() == 0) {
-            JOptionPane.showMessageDialog(null,
-                    "Error: classTime cannot be null of empty string");
-            System.exit(0);
-        }
+        this.classTime = classTime;
+    }
+
+    public int getNumberOfSeats() {
+        return numberOfSeats;
+    }
+
+    public void setNumberOfSeats(int numberOfSeats) {
+        this.numberOfSeats = numberOfSeats;
     }
     
     
