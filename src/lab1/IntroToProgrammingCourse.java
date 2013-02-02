@@ -36,13 +36,13 @@ public class IntroToProgrammingCourse extends CollegeCourse{
         this.numberOfSeats = numberOfSeats;
     }
 
-    public final void setCourseNumber(String courseNumber) {
-        if(courseNumber == null || courseNumber.length() == 0) {
-            JOptionPane.showMessageDialog(null,
-                    "Error: courseNumber cannot be null of empty string");
-            System.exit(0);
-        }
-    }
+//    public final void setCourseNumber(String courseNumber) {
+//        if(courseNumber == null || courseNumber.length() == 0) {
+//            JOptionPane.showMessageDialog(null,
+//                    "Error: courseNumber cannot be null of empty string");
+//            System.exit(0);
+//        }
+//    }
 
     
     
@@ -133,6 +133,7 @@ public class IntroToProgrammingCourse extends CollegeCourse{
     public void setNumberOfSeats(int numberOfSeats) {
         this.numberOfSeats = numberOfSeats;
     }
+    
     
     
     

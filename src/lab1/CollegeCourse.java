@@ -38,13 +38,13 @@ public abstract class CollegeCourse {
     }
     //Abstract setter methods for sub classes
     //This is to make sure variables are set in the subclassess for the courses
-    public abstract void setSectionNumber();
-    public abstract void setInstructor();
-    public abstract void setRoomNumber();
-    public abstract void setDates();
-    public abstract void setDaysOfWeek();
-    public abstract void setClassTime();
-    public abstract void setNnumberOfSeats();
+    public abstract void setSectionNumber(String sectionNumber);
+    public abstract void setInstructor(String instructor);
+    public abstract void setRoomNumber(String roomNumber);
+    public abstract void setDates(String dates);
+    public abstract void setDaysOfWeek(String daysOfWeek);
+    public abstract void setClassTime(String classTime);
+    public abstract void setNumberOfSeats(int numberOfSeats);
     
     //Abstract getter methods
     //This is make sure methods are set in the subclasses to get the information
@@ -54,7 +54,7 @@ public abstract class CollegeCourse {
     public abstract String getDates();
     public abstract String getDaysOfWeek();
     public abstract String getClassTime();
-    public abstract int getNnumberOfSeats();
+    public abstract int getNumberOfSeats();
     
     
 
