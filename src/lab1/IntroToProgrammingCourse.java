@@ -11,13 +11,19 @@ import javax.swing.JOptionPane;
  */
 public class IntroToProgrammingCourse extends CollegeCourse{
 
-    private String courseName;
-    private String courseNumber;
-    private double credits;
-    private String prerequisites;
-    private String instructor;private String roomNumber;
+    private final String COURSE_NAME = "Into to Programming";
+    private final String COURSE_NUMBER = "152-107";
+    private final double CREDITS = 2;
+    private final String PREREQUISITES = "None";
+    private final double TUITION = 254.30;
+    private String sectionNumber;
+    private String instructor;
+    private String roomNumber;
+    private String dates;
     private String daysOfWeek;
     private String classTime;
+    private int numberOfSeats;
+    
     
     
     public IntroToProgrammingCourse(String courseName, String courseNumber, 
