@@ -1,7 +1,5 @@
 package lab1;
 
-import javax.swing.JOptionPane;
-
 /**
  * Describe responsibilities here. NOTE: this class has NO PREREQUISITES!
  * Do not change this fact.
@@ -38,53 +36,7 @@ public class IntroToProgrammingCourse extends CollegeCourse{
         this.classTime = classTime;
         this.numberOfSeats = numberOfSeats;
     }
-
-//    public final void setCourseNumber(String courseNumber) {
-//        if(courseNumber == null || courseNumber.length() == 0) {
-//            JOptionPane.showMessageDialog(null,
-//                    "Error: courseNumber cannot be null of empty string");
-//            System.exit(0);
-//        }
-//    }
     
-
-    
-
-    
-    
-//    public void setInstructor(String instructor) {
-//        if(instructor == null || instructor.length() == 0) {
-//            JOptionPane.showMessageDialog(null,
-//                    "Error: instructor cannot be null of empty string");
-//            System.exit(0);
-//        }
-//    }
-//    
-//    public void setRoomNumber(String roomNumber) {
-//        if(roomNumber == null || roomNumber.length() == 0) {
-//            JOptionPane.showMessageDialog(null,
-//                    "Error: roomNumber cannot be null of empty string");
-//            System.exit(0);
-//        }
-//    }
-//    
-//    public void setDaysOfWeek(String daysOfWeek) {
-//        if(daysOfWeek == null || daysOfWeek.length() == 0) {
-//            JOptionPane.showMessageDialog(null,
-//                    "Error: daysOfWeek cannot be null of empty string");
-//            System.exit(0);
-//        }
-//    }
-//    
-//    public void setClassTime(String classTime) {
-//        if(classTime == null || classTime.length() == 0) {
-//            JOptionPane.showMessageDialog(null,
-//                    "Error: classTime cannot be null of empty string");
-//            System.exit(0);
-//        }
-//    }
-    
-
     public String getSectionNumber() {
         return sectionNumber;
     }
@@ -160,11 +112,4 @@ public class IntroToProgrammingCourse extends CollegeCourse{
     public double getTUITION() {
         return TUITION;
     }
-    
-    
-    
-    
-    
-
-    
 }
