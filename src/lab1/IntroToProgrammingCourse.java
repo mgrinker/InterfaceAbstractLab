@@ -23,15 +23,20 @@ public class IntroToProgrammingCourse extends CollegeCourse{
     private String daysOfWeek;
     private String classTime;
     private int numberOfSeats;
-    
-    
-    
-    public IntroToProgrammingCourse(String courseName, String courseNumber, 
-            double credits, String prerequisites, String instructor, 
-            String roomNumber, String daysOfWeek, String classTime) {
-        super(courseName, courseNumber, credits, prerequisites, instructor,
-                roomNumber, daysOfWeek, classTime);
+
+    public IntroToProgrammingCourse(String sectionNumber, String instructor,
+            String roomNumber, String dates, String daysOfWeek,
+            String classTime, int numberOfSeats) {
+        this.sectionNumber = sectionNumber;
+        this.instructor = instructor;
+        this.roomNumber = roomNumber;
+        this.dates = dates;
+        this.daysOfWeek = daysOfWeek;
+        this.classTime = classTime;
+        this.numberOfSeats = numberOfSeats;
     }
+
+    
 
     
     

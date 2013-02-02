@@ -14,6 +14,9 @@ public abstract class CollegeCourse {
     private final String COLLEGE_STATE = "WI";
     private final String COLLEGE_ZIP = "53072";
 
+    public CollegeCourse() {
+    }
+
     public String getCOLLEGE_NAME() {
         return COLLEGE_NAME;
     }
