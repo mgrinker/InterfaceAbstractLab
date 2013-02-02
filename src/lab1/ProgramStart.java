@@ -98,6 +98,8 @@ public class ProgramStart {
          introProgSection1.setNumberOfSeats(classNumberOfSeats);
          
          //Display IntroToProgramming object
+         System.out.println("");
+         System.out.println("");
          System.out.println("Here is the course information");
          System.out.println("College name:\t"
                  + introProgSection1.getCOLLEGE_NAME());
@@ -128,7 +130,7 @@ public class ProgramStart {
                  + introProgSection1.getDaysOfWeek());
          System.out.println("Section time:\t"
                  + introProgSection1.getClassTime());
-         System.out.println("Number of seats in section:\t"
+         System.out.println("Num Seats:\t"
                  + introProgSection1.getNumberOfSeats());
          
          
@@ -138,7 +140,7 @@ public class ProgramStart {
          
          System.out.println("");
          System.out.println("");
-         
+         keyboard.nextLine();
         //Get section number, validate and set
          System.out.println("You are going to enter the information for an"
                  + " Introductory to Java course");
@@ -212,6 +214,8 @@ public class ProgramStart {
          introJavaCourseSection1.setNumberOfSeats(classNumberOfSeats);
          
          //Display IntroToProgramming object
+         System.out.println("");
+         System.out.println("");
          System.out.println("Here is the course information");
          System.out.println("College name:\t"
                  + introJavaCourseSection1.getCOLLEGE_NAME());
@@ -242,7 +246,7 @@ public class ProgramStart {
                  + introJavaCourseSection1.getDaysOfWeek());
          System.out.println("Section time:\t"
                  + introJavaCourseSection1.getClassTime());
-         System.out.println("Number of seats in section:\t"
+         System.out.println("Num Seats:\t"
                  + introJavaCourseSection1.getNumberOfSeats());
          
         
@@ -250,6 +254,9 @@ public class ProgramStart {
         AdvancedJavaCourse advancedJavaCourseSection1 = 
                 new AdvancedJavaCourse(); 
         
+        System.out.println("");
+        System.out.println("");
+        keyboard.nextLine();
         //Get section number, validate and set
          System.out.println("You are going to enter the information for an"
                  + " Advanced Java course");
@@ -323,6 +330,8 @@ public class ProgramStart {
          advancedJavaCourseSection1.setNumberOfSeats(classNumberOfSeats);
          
          //Display IntroToProgramming object
+         System.out.println("");
+         System.out.println("");
          System.out.println("Here is the course information");
          System.out.println("College name:\t"
                  + advancedJavaCourseSection1.getCOLLEGE_NAME());
@@ -353,7 +362,7 @@ public class ProgramStart {
                  + advancedJavaCourseSection1.getDaysOfWeek());
          System.out.println("Section time:\t"
                  + advancedJavaCourseSection1.getClassTime());
-         System.out.println("Number of seats in section:\t"
+         System.out.println("Num Seats:\t"
                  + advancedJavaCourseSection1.getNumberOfSeats());
         
     }
