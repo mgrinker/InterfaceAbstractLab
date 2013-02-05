@@ -5,7 +5,7 @@ package lab3;
  *
  * @author Michael
  */
-public class UnderGradStudent extends Enrollee {
+public class UnderGradStudent extends Enrollee implements UnderGradInformation {
    
     // None of these variables shoud be final because any could change
     // Except for student ID
@@ -20,74 +20,92 @@ public class UnderGradStudent extends Enrollee {
     private String courseName;
     private int numberOfCredits;
 
+    @Override
     public String getFirstName() {
         return firstName;
     }
 
+    @Override
     public void setFirstName(String firstName) {
         this.firstName = firstName;
     }
 
+    @Override
     public String getLastName() {
         return lastName;
     }
 
+    @Override
     public void setLastName(String lastName) {
         this.lastName = lastName;
     }
 
+    @Override
     public String getAddress() {
         return address;
     }
 
+    @Override
     public void setAddress(String address) {
         this.address = address;
     }
 
+    @Override
     public String getPhone() {
         return phone;
     }
 
+    @Override
     public void setPhone(String phone) {
         this.phone = phone;
     }
 
+    @Override
     public String getEmail() {
         return email;
     }
 
+    @Override
     public void setEmail(String email) {
         this.email = email;
     }
 
+    @Override
     public String getStudentID() {
         return studentID;
     }
     // This should set the student ID as final, it shouldn't change
+    @Override
     public final void setStudentID(String studentID) {
         this.studentID = studentID;
     }
 
+    @Override
     public String getAreaOfStudy() {
         return AreaOfStudy;
     }
 
+    @Override
     public void setAreaOfStudy(String AreaOfStudy) {
         this.AreaOfStudy = AreaOfStudy;
     }
 
+    @Override
     public String getCourseName() {
         return courseName;
     }
 
+    @Override
     public void setCourseName(String courseName) {
         this.courseName = courseName;
     }
 
+    @Override
     public int getNumberOfCredits() {
         return numberOfCredits;
     }
 
+    @Override
     public void setNumberOfCredits(int numberOfCredits) {
         this.numberOfCredits = numberOfCredits;
     }
