@@ -23,7 +23,23 @@ public class ProgramStart {
         
         // Create IntroToProgrammingCourse object
         IntroToProgrammingCourse introProgSection1 = 
-                new IntroToProgrammingCourse(); 
+                new IntroToProgrammingCourse();
+        
+        // In the abstract class I made the school information final variables
+        //because this information is not going to change and will be common
+        // to all subclass courses.
+        // I also made information related to each course final variables in the
+        // subclasses.  This information again will not change.
+        
+        // Could not use LSP in this case because it would not
+        // allow me to get the final variables that are declared in the 
+        // subclasses.  These should probably be made into abstract getter
+        //methods in the super class so that they MUST be overriden in the
+        //subclasses.  This way the correct information will be displayed.
+        // then you could also use LSP.
+        
+        // Input and display code that follows should really be put into a
+        // seperate method so it does not have to be re-written for each object
         
         //Get section number, validate and set
          System.out.println("You are going to enter the information for an"

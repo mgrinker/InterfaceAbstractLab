@@ -6,6 +6,16 @@ import java.util.Scanner;
  *
  * @author Michael Grinker
  */
+
+// Please see comments in ProgramStart for Lab1 as they also apply here.
+// This package uses an interface instead of having the abstract methods
+// in the abstract class.  I still have the abstract class with the general
+// information that applies to all subclasses.  In this case I guess I don't
+// see the difference between using the abstract class and the interface.  The 
+// abstract class has no concrete methods that would be hidden.  Hopefully
+// this will be shown in class.
+
+
 public class ProgramStart {
     
      public static void main(String[] args) {
